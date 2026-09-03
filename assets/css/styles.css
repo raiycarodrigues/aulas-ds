@@ -69,7 +69,7 @@
         margin-bottom: 15px;
 
         .highlight {
-            background-image: linear-gradient(to left, #bf09cf, #1033cf);
+            background-image: linear-gradient(to left, var(--pink-primary), var(--pink-secundary));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -123,6 +123,19 @@
                 font-size: 11px;
                 color: var(--text-white);
                 cursor: pointer;
+                transition: 0.3s;
+
+                &.active {
+                    background-color: var(--pink-primary);
+                    border-color: var(--pink-primary);
+                    color: var(--text-white);
+                }
+                
+                &:hover {
+                    color: var(--text-white);
+                    border-color: var(--pink-secundary);
+                }
+
             }
         }
     }
