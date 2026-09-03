@@ -61,6 +61,13 @@
     flex-direction: column;
 
     .title {
-        color: var(--text-white)
+        color: var(--text-white);
+
+        .highlight {
+            background-image: linear-gradient(to left, #bf09cf, #1033cf);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
