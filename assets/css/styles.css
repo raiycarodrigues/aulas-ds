@@ -139,4 +139,26 @@
             }
         }
     }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+
+        .card {
+            width: calc(33% - 8px);
+            border: 1px solid var(--border-light);
+            border-radius: 15px;
+            background-color: #333;
+
+            .header {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }
